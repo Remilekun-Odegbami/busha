@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   
+    <script src="https://use.fontawesome.com/0383fc1297.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Busha</title>
+</head>
+<body>
+    <header>
+        <section class="navigation">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="logo navbar-brand">
+                        <a href="index.html">
+                            <img src="Media/logo.svg" alt="logo" class="img-fluid">
+                        </a>
+                    </div>
+                    
+                    <ul class="navbar-nav ms-auto order-lg-2 order-md-2 auth">
+                        <li class="nav-item login"><a href="#" class="nav-link">Log In</a></li>
+                        <li class="nav-item signup"><a href="#" class="nav-link">Sign Up</a></li>
+                    </ul>
+
+                    <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                        <span class="navbar-toggler-icon"><img src="Media/nav_collapse_icon.svg" alt=""></span>
+                    </div>
+
+                    <div class="collapse navbar-collapse order-lg-1 order-md-1" id="navmenu">
+                        <ul class="navbar-nav ms-auto more">
+                            <li class="nav-item learn"><a href="#" class="nav-link">Learn</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Company
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Careers</a></li>
+                                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <!-- end header -->
+    <section class="section_one">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12" data-aos="fade-up-right" data-aos-duration="1500">
+                    <h1 class="header">Your crypto journey starts here.</h1>
+                    <p class="text">Buy, sell, and manage your cryptocurrency portfolio on the simplest, safest and the most trusted platform for all types of users.</p>
+                    <div class="d-flex" data-aos="fade-up-right" data-aos-duration="1500">
+                        <button type="submit" class="btn btn_one">
+                            <div class="d-flex">
+                                <i class="fa fa-apple"></i>
+                                <p>Download on the <span>App Store</span></p>
+                                    
+                            </div>
+                        </button>
+                        <!-- I am using google wallet because font awesome playstore is not available -->
+                        <button type="submit" class="btn btn_one">
+                            <div class="d-flex">
+                                <i class="fa fa-google-wallet" aria-hidden="true" data-aos-duration="1500"></i>
+                                <p>Get it on <span>Google Play</span> </p>
+                                
+                            </div>
+                        </button>
+                    </div>
+                    
+                <div class="row info mt-5">
+                    <div class="col">
+                        <i class="fa fa-comments"></i>
+                        <p class="text">24/7 human <br> customer support</p>
+                    </div>
+                    <div class="col">
+                        <i class="fa fa-exchange"></i>
+                        <p class="text">Trade with <br> zero fees</p>
+                    </div>
+                </div>
+                </div>
+                <!-- the font awesome icons are not the same but I tried using one that is close enough -->
+                <div class="col-md-5 col-sm-12" data-aos="fade-up-right" data-aos-duration="1500">
+                    <img src="Media/img_1.svg" alt="Explore" class="img-fluid explore">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_two">
+        <div class="container">
+            <div class="row">
+                <div class="info">
+                    <h2 class="header">Join one of Africa's leading digital asset platforms</h2>
+                    <p class="text">Over the past few years, we have proven to be one of the most trusted and loved touch-points for crypto on the continent.</p>
+                </div>
+                <div class="stats d-flex justify-content-between" data-aos="fade-up-right" data-aos-duration="1500">
+                    <div class="col">
+                        <h3 class="num">200k+</h3>
+                        <p class="num_text"> verified users</p>
+                    </div>
+                    <div class="col">
+                        <h3 class="num">30+</h3>
+                        <p class="num_text"> Assets Supported</p>
+                    </div>
+                    <div class="col">
+                        <h3 class="num">1.5m+</h3>
+                        <p class="num_text"> Trades Executed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_three mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500">
+                    <img src="Media/img_2.gif" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 mt-3" data-aos="fade-up" data-aos-duration="2000">
+                    <h3 class="header">Buy and sell</h3>
+                    <p class="text">Busha offers you several flexible options to buy and sell your crypto. Experience the most convenient platform for trading your Bitcoin and other crypto assets instantly.</p>
+                    <ul class="more_info">
+                        <li data-aos="fade-up"><i class="fa fa-check-circle-o" aria-hidden="true"></i><span>Trade Instantly:</span> Deposit your fiat or crypto into your secure wallet on Busha and instantly buy, sell and swap within assets. Withdraw your fiat and crypto externally in minutes.</li>
+                        <li data-aos="fade-up"><i class="fa fa-check-circle-o" aria-hidden="true"></i><span>schedule recurring buys: </span>Automatically buy crypto every day, week or month. Recurring buys use the buy price on Busha at the time of execution. Monitor your average gains real-time.</li>
+                        <li data-aos="fade-up"><i class="fa fa-check-circle-o" aria-hidden="true"></i><span>set limit orders:</span> Place a buy or sell order at a price you set</li>
+                    </ul>
+                    <button type="submit" class="btn m-md-auto" data-aos="fade-up-right"  data-aos-duration="1500">Get started
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i> 
+                </button>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section class="section_four">
+        <div class="container">
+            <div class="row">
+                <div class="section_four_info">
+                    <p class="yield" data-aos="fade-up">yield</p>
+                    <h3 class="header" data-aos="fade-up">Save and earn</h3>
+                    <p class="text" data-aos="fade-up-right" data-aos-duration="2000">Grow your wealth with Busha. Securely store your assets on the platform and earn attractive returns over time.</p>
+                </div>
+                <div class="col-md-5">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="card-header"><i class="fa fa-building" aria-hidden="true"></i> Save and Earn Interest</div>
+                        <div class="card-body">
+                            <p class="card-text">Busha Yield allows you to earn interest on dollar stablecoins saved in your Yield wallet. With Busha Yield, you can earn up to 10% APY. Interest is paid out daily and no lock-in period. Get Started with as low as 10 USDT.</p>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="card-header"><i class="fa fa-suitcase" aria-hidden="true"></i> Best Flex Savings for Dollar Stablecoins</div>
+                        <div class="card-body">
+                            <p class="card-text">With Busha Yield, you can get started with crypto without the volatility. Providing easy access into the world of crypto by allowing you to enjoy the benefits of DeFi (Decentralized Finance) with reasonable, stable returns on your assets. The best part, is you earn in dollars on USD stablecoins, protecting you from adverse FX conditions, steep inflation rate, while giving you the freedom to cash out anytime.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7" data-aos="fade-up-right" data-aos-duration="2000">
+                    <img src="Media/yield.png" alt="Yield" class="img-fluid">
+                    <button type="submit" class="btn">Get started
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i> 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>    
+ 
+    <section class="section_five">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="2000">
+                    <h3 class="header">Borrow money at rates as low as 2% monthly.</h3>
+                    <p class="text">Get the best out of your crypto. Busha allows you to borrow funds instantly against your crypto assets. This means that you can get a loan while continuing to HODL. Isn’t that awesome? You don’t have to sell your crypto to get cash for those urgent needs</p>
+                    <ul class="more_info">
+                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>Instant Approval </li>
+                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>No Credit Checks</li>
+                        <li><i class="fa fa-check-circle-o" aria-hidden="true"></i>High Loan-to-value</li>
+                    </ul>
+                    <button type="submit" class="btn">Coming soon
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i> 
+                    </button>
+                </div>                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="Media/img_2.gif" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <section class="section_six">
+        <div class="container">
+            <div class="row"> 
+                <p class="pay" data-aos="fade-up">Pay</p>
+                <h3 class="header" data-aos="fade-up-right" data-aos-duration="1500">Accept Bitcoin, and other cryptos in minutes</h3>
+                <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-up-right" data-aos-duration="1500">
+                    <div class="section_six_info mb-5">
+                        <p class="text">If you are looking to accept payments online locally or globally, do so with Busha Pay. You can collect cryptocurrencies such as Bitcoin, Ethereum and others as payment from customers around the world.</p>
+                        <button type="submit" class="btn" data-aos="fade-up">Learn more
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>               
+                <div class="col-lg-6 col-md-12 col-sm-12 sub_col mt-md-4 mt-sm-4">
+                    <div class="container">
+                        <div class="row" data-aos="fade-up-right" data-aos-duration="1500">
+                            <div class="col-md-6 col-sm-12 ">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <p class="text">Get fully set up in minutes, not days</p>
+                            </div>
+                            <div class="col-md-6 col-sm-12 ">
+                                <i class="fa fa-shield" aria-hidden="true"></i>
+                                <p class="text">Eliminate fraud- No chargebacks or identity theft</p>
+                            </div>
+                    
+                            <!-- Force next columns to break to new line at md breakpoint and up -->
+                            <div class="w-100 d-none d-md-block"></div>
+                    
+                            <div class="col-md-6 col-sm-12 mt-3">
+                            <i class="fa fa-globe" aria-hidden="true"></i>
+                            <p class="text">Tap into a flobal customer base</p>
+                            </div>                     
+                            <div class="col-md-6 col-sm-12 mt-3">
+                            <i class="fa fa-usd" aria-hidden="true"></i>
+                            <p class="text">No hidden fees ever — Just 1%, and that’s it!</p>
+                            </div>
+                        </div>
+                      </div>
+                </div>               
+            </div>
+        </div>
+    </section>
+
+    <section class="section_seven">
+        <div class="container">
+            <div class="row">
+                <h2 class="header text-center" data-aos="fade-up">Top-rated by 2,500+ real users</h2>
+                <div class="d-md-flex testimonials">
+                    <div class="testimonial col-lg-4 col-sm-12">
+                        <h3 class="sub_header"><span class="o">O</span> Osamudiamen Godson</h3>
+                        <p class="text">"Best cryptocurrency app ever. Good work by the team, transactions are always reliable and I've never had a missing coin since over a year that I have been using busha. I recommend it to all of you if you want to have a long term reliable crypto wallet that serves you".</p>
+                    </div>
+                    <div class="testimonial col-lg-4 col-sm-12">
+                        <h3 class="sub_header"><span class="j">J</span> John Adeoye</h3>
+                        <p class="text">As a new user, I think this app is entirely different from most apps I used with it's simplicity and easy to understand user interface. I hope you keep up the good work. The app is getting even more better, I love it.</p>
+                    </div>
+                    <div class="testimonial col-lg-4 col-sm-12">
+                        <h3 class="sub_header"><span class="k">K</span> Kevin Osagie</h3>
+                        <p class="text">"I feel so confident and 500% secure using Busha, every time! Swift and easy transactions. Top-notch responsive customer service. The concept is highly commendable. I love it!"</p>
+                    </div>
+                    <div class="testimonial col-lg-4 col-sm-12">
+                        <h3 class="sub_header"><span class="o">O</span> Osamudiamen Godson</h3>
+                        <p class="text">"Best cryptocurrency app ever. Good work by the team, transactions are always reliable and I've never had a missing coin since over a year that I have been using busha. I recommend it to all of you if you want to have a long term reliable crypto wallet that serves you".</p>
+                    </div>
+                    <div class="testimonial col-lg-4 col-sm-12">
+                        <h3 class="sub_header"><span class="j">J</span> John Adeoye</h3>
+                        <p class="text">As a new user, I think this app is entirely different from most apps I used with it's simplicity and easy to understand user interface. I hope you keep up the good work. The app is getting even more better, I love it.</p>
+                    </div>
+                    <div class="testimonial col-lg-4 col-sm-12">
+                        <h3 class="sub_header"><span class="k">K</span> Kevin Osagie</h3>
+                        <p class="text">"I feel so confident and 500% secure using Busha, every time! Swift and easy transactions. Top-notch responsive customer service. The concept is highly commendable. I love it!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_eight">
+        <div class="container">
+            <div class="row"> 
+                <div class="mb-5 row">
+                    <div class="col-md-8 col-sm-12" data-aos="fade-up">
+                        <div class="section_eight_info">
+                            <p class="blog">blog</p>
+                            <h3 class="header">Our latest news and insights</h3>
+                        </div>    
+                    </div>                
+                    <div class="col-md-4 col-sm-12 mt-5" data-aos="fade-up">
+                        <button type="submit" class="btn"> View all posts</button>
+                    </div>
+                </div>
+                <div class="gallery d-lg-flex" data-aos="fade-up">
+                    <div class="col-lg-9 mb-3">
+                        <div class="img_overlay zoom">
+                            <img src="Media/img_5.jpeg" alt="NTF collector" class="img-fluid w-100" >
+                            <div class="img-text img-text-one">
+                                <h4 class="general">General</h4>
+                                <h3 class="img_header">How to become an NFT Creator</h3>
+                                <h5 class="date_and_time">April 11, 2022 . 2 m</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 mx-lg-3">
+                        <div class="col-sm-12 mb-3">
+                            <div class="col img_overlay zoom">
+                                <img src="Media/img_6.jpeg" alt="NTF collector" class="img-fluid">
+                                <div class="img-text">
+                                    <h4 class="general">General</h4>
+                                    <h3 class="img_header">7 myths about the Metaverse</h3>
+                                    <h5 class="date_and_time">April 14, 2022 . 1 m</h5>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col col-sm-12 img_overlay zoom mb-3">
+                            <img src="Media/img_7.jpeg" alt="NTF collector" class="img-fluid w-100">
+                            <div class="img-text">
+                                <h4 class="general">General</h4>
+                                <h3 class="img_header">Blockchain Explained</h3>
+                                <h5 class="date_and_time">March 28, 2022 . 2 m</h5>
+                            </div>
+                        </div>
+                        <div class="col col-sm-12 img_overlay zoom mb-3">
+                            <img src="Media/img_7.jpeg" alt="NTF collector" class="img-fluid w-100">
+                            <div class="img-text">
+                                <h4 class="general">General</h4>
+                                <h3 class="img_header">What Makes STABLECOINS So Stable?</h3>
+                                <h5 class="date_and_time">March 24, 2022 . 1 m</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section class="section_nine">
+        <div class="join_busha" data-aos="fade-up-right" data-aos-duration="1000">
+            <h3 class="header">Join the Busha Community</h3>
+            <p class="text">Stay in touch with the latest news and releases</p>
+            <div class="socials">            
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+        <div class="footer" data-aos="fade-up-right" data-aos-duration="1000">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <img src="Media/footer_logo.svg" alt="Busha">
+                    </div>
+                    <div class="d-lg-none d-md-block col-md-12 my-3">
+                        <p class="text"> Subscribe to our weekly newsletter</p>
+                        <input type="email" name="email"
+                        placeholder="Enter your email">
+                        <button class="btn my-sm-3">Subscribe</button>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <ul>
+                            <li class="footer_links"><a href="#">About us</a></li>
+                            <li class="footer_links"><a href="#">Careers</a></li>
+                            <li class="footer_links"><a href="#">Blog</a></li>
+                            <li class="footer_links"><a href="#">Press</a></li>
+                            <li class="footer_links"><a href="#">Yield Terms</a></li>
+                            <li class="footer_links"><a href="#">Privacy Policy</a></li>
+                            <li class="footer_links"><a href="#">AML & KYC policy</a></li>
+                            <li class="footer_links"><a href="#">Terms of use</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <ul>
+                            <li class="footer_links"><a href="#">Exchange</a></li>
+                            <li class="footer_links"><a href="#">Pay</a></li>
+                            <li class="footer_links"><a href="#">Card</a></li>
+                            <li class="footer_links"><a href="#">Learn</a></li>
+                            <li class="footer_links"><a href="#">Savings</a></li>
+                            <li class="footer_links"><a href="#">Yield</a></li>
+                            <li class="footer_links"><a href="#">Borrow</a></li>
+                            <li class="footer_links"><a href="#">Prime</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <ul>
+                            <li class="footer_links"><a href="#">Help Center</a></li>
+                            <li class="footer_links"><a href="#">Contact us</a></li>
+                            <li class="footer_links"><a href="#">ID Verification</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <p class="text-white">© 2022 Busha. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!-- for the animation, I used a library called aos. -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>
