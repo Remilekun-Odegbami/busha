@@ -33,7 +33,6 @@ a:hover {
 }
 
 
-
 /* nav bar styling  */
 .more {
     margin-right: 30%;
@@ -55,6 +54,7 @@ a:hover {
     font-size: 20px;
     font-weight: 500;
 }
+
 .navbar-nav .nav-item a:hover{
     color: var(--text);
 }
@@ -84,30 +84,29 @@ a:hover {
     padding: 20px 25px;
 }
 
-
-/* section one styling */
+/* section one */
 .section_one{
-    margin-top: 5%;
-    margin-bottom: 9%;
+    margin-top: 8%;
+    margin-bottom: 6%;
 }
 
 .section_one .header {
     font-weight: 700;
-    font-size: 3em;
+    font-size: 4em;
     color: var(--black);
     max-width: 600px;
+    font-weight: bold;
 }
 
 .section_one .text {
     max-width: 600px;
     margin-bottom: 32px;
     color: var(--text);
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.5;
 }
 
 .section_one .info {
-    width: 60%;
     margin-top: 20px;
 }
 
@@ -127,15 +126,20 @@ a:hover {
 
 .btn_one {
     background-color: #000;
-    margin-right: 10px;
-    border-radius: 30px;
+    margin-right: 15px;
+    border-radius: 20px;
+    padding: 10px 10px 0px 10px;
+}
+
+.btn_one:hover {
+    color: var(--white);
 }
 
 .btn_one i {
     color: var(--green);
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin-top: 10px;
-    padding-right: 8px;
+    padding-right: 5px;
 }
 
 .btn_one {
@@ -147,8 +151,20 @@ a:hover {
 .btn_one span {
     color: var(--white);
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: 600;
     display: block;
+    padding-bottom: 0;
+}
+
+.section_one .img-group {
+    position: relative;
+}
+
+.section_one .coins_img {
+    position: absolute;
+    bottom: 25px;
+    left: -60px;
+    width: 50%;
 }
 
 /* section two */
@@ -161,6 +177,9 @@ a:hover {
     width: 65%;
     margin: auto;    
 }
+
+
+/* I grouped these classes because they have the same styling with litlle or no change.  */
 
 .section_two .header,
 .section_three .header,
@@ -187,16 +206,16 @@ a:hover {
     overflow: auto;
 }
 
-.section_two .stats .col {
+.section_two .stats .stat {
     border-right: 1px solid rgb(218, 211, 211);
     padding: 30px 40px;
 }
 
-.section_two .stats .col:nth-child(3) {
+.section_two .stats .stat:nth-child(3) {
     border-right: none
 }
 
-.section_two .stats .col h3 {
+.section_two .stats .stat h3 {
     font-size: 3.5em;
     color: var(--black);
     font-weight: bold;
@@ -210,7 +229,6 @@ a:hover {
 }
 
 /* section three */
-
 .section_three .text, .section_five .text {
     margin-bottom: 32px;
     color: var(--text);
@@ -244,6 +262,7 @@ a:hover {
     font-size: 1em;
     font-weight: bold;
     margin: 0 auto;
+    transform: rotate(360deg);
 }
 
 .section_three .btn i{
@@ -267,7 +286,7 @@ a:hover {
 .section_four .yield {
     color: var(--green);
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .section_four_info {
@@ -278,7 +297,7 @@ a:hover {
 }
 
 .section_four .section_four_info .header {    
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 16px;
     font-family: Roobert, sans-serif;
     font-size: 2.5em;
@@ -298,7 +317,10 @@ a:hover {
     margin-bottom: 80px;
     border-bottom: 1px solid var(--white);
     margin-top: 100px;
+}
 
+.section_four .btn i{
+    margin-left: 10px;
 }
 
 /* section five  */
@@ -370,25 +392,12 @@ a:hover {
     margin-bottom: 5%;
 }
 
-.section_seven .testimonials{
-    padding: 30px 0;
-    margin-top: 30px;
-    animation: slideshow 15s linear infinite;
-}
-
-@keyframes slideshow {
-    0% {transform:translateX(0px)}
-    100% {transform: translateX(calc(-180px * 6));}
-}
-
 .section_seven .testimonials .testimonial{
     background-color: #FDFDFD;
-    margin-left: 20px;
     margin-bottom: 20px;
     padding: 20px 30px;
     max-width: 500px;
 }
-
 
 .section_seven .testimonials .col-12 {
     background-color: var(--white);
@@ -500,7 +509,7 @@ a:hover {
 
 .img-text .date_and_time {
     margin-top: 10px;
-    font-style: 0.8em;
+    font-size: 1.2em;
 }
 
 .section_nine {
@@ -546,13 +555,18 @@ a:hover {
 
 .section_nine .footer {
     background-color: var(--black);
-    padding: 18% 0;
+    padding-top: 18%;
     color: var(--white);
 }
 
 .footer ul li {
-    font-size: 1.2em;
-    line-height: 3;
+    font-size: 16px;
+    line-height: 3;    
+    transition: color 200ms ease;
+}
+
+.section_nine .footer ul li:hover {
+    color: #b5b9c0;
 }
 
 .footer input {
@@ -561,17 +575,16 @@ a:hover {
     color: var(--white);
     outline: none;
     border: none;
-    height: 50px;
+    height: 60px;
     width: 70%;
     padding-left: 20px;
 }
 
 .section_eight .btn, .footer .btn {
     background-color: var(--green);
-    padding: 10px 20px;
+    padding: 15px 20px;
     color: var(--white);
-    font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-left: 20px;
 }
 
@@ -595,27 +608,23 @@ a:hover {
 
 .copyright {
     background: var(--black);
-    font-size: 1.2em;
+    font-size: 1em;
+    padding-top: 50px;
 }
 
 .copyright p {
     border-top: 1px solid gray;
     padding: 30px 0;
-
 }
 
 
-
-
-
-
-
-
+/* media query for different screen sizes for responsive website  */
 
 @media (max-width: 1024px ) {
     .section_eight {
         margin-bottom: 30%;
     }
+
     .section_nine .join_busha {
         margin-bottom: 7%;
         width: 70%;
@@ -623,11 +632,62 @@ a:hover {
         top: -25%;
         border-radius: 10px;
     }
+
+    .img-text {
+        top: 5px;
+    }
+
+    .img-text .general {
+        letter-spacing: 1px;
+    }
+
+    .img-text-one {
+        top: 250px;
+    } 
+    .coins_img {
+        top: 320px;
+    }
 }
 
 
 
 @media (max-width:770px) {
+    .section_one .header {
+        font-size: 3.5em;
+    }
+
+    .btn_one i {
+        padding-right: 3px;
+        font-size: 1.5em;
+    }
+    
+    .btn_one {
+        font-size: 0.8em;
+    }
+    
+    .btn_one span {
+        font-size: 1.3em;
+    }
+
+    .section_two .info {   
+        width: 100%;
+    }
+
+    .section_two .stats {
+        border-top: none;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .section_two .stats .stat {
+        border-right: none;
+        padding: 30px 40px;
+    }
+    
+    .section_two .stats .stat h3 {
+        font-size: 3.5em;
+    }
+
     .section_four .btn {
         margin-left: 35%;
     }
@@ -642,6 +702,11 @@ a:hover {
     
     .section_eight .section_eight_info .header {
         width: 100%;
+    }
+
+    .coins_img {
+        top: 230px;
+        left: 0px !important;
     }
 }
 
@@ -658,8 +723,16 @@ a:hover {
     }
 
     /* section one  */
+    .section_one {
+        margin-top: 20%;
+    }
+
+    .section_one img {
+        margin-top: -30% !important;
+    }
+
     .section_one .header {
-        font-size: 2.5em;
+        font-size: 3em;
         width: 100%;
     }
 
@@ -670,18 +743,19 @@ a:hover {
     .section_one .info {
         margin-top: 70px;
         margin-bottom: 150px;
-        width: 100%;
     }
     
     .section_one .explore {
         margin-top: 10px;
     }
 
+/* I grouped these classes because they have the same styling with litlle or no change.  */
     .section_two .header,
     .section_three .header,
     .section_four .section_four_info .header,
     .section_five .header, .section_eight .header {
-        font-size: 1.8em;
+        font-size: 2.2em;
+        width: 100%;
     }
 
     .section_two {
@@ -729,6 +803,29 @@ a:hover {
 
 
 @media (max-width:450px) {
+
+    .btn_one i {
+        padding-right: 3px;
+        font-size: 1.5em;
+    }
+    
+    .btn_one {
+        font-size: 0.7em;
+    }
+    
+    .btn_one span {
+        font-size: 1.3em;
+    }
+
+    .section_one .info {
+        width: 100%;
+    }
+
+    .signup a{
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    
     .section_two {
         margin-top: -30%;
     }
@@ -737,6 +834,14 @@ a:hover {
         width: 100%;
         margin-top: 50%;
     }
+    
+    .section_four_info {
+        width: 100%;
+    }
+
+    .img_space {
+        margin-bottom: 40%;
+    }
 
     .section_nine .socials i {
         font-size: 1.2em;
@@ -744,12 +849,16 @@ a:hover {
         margin-left: 8px;
     }
 
+    .copyright p{
+        margin-left: 40px;
+        width: 80%;    
+    }
 
+    .coins_img {
+        left: 10px !important;
+        top: 250px;
+    }
 
 }
 
 
-
-
-
-/* I grouped some classes because they had the same styling with litlle or no change.  */
